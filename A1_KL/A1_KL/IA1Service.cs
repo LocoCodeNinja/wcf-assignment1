@@ -13,10 +13,17 @@ namespace A1_KL
     public interface IA1Service
     {
         [OperationContract]
-        bool IsInt(string userInput);
-
+        bool IsInt(string n1);
         [OperationContract]
-        string PrimeNumber(int userInput);
+        string PrimeNumber(int n1);
+        [OperationContract]
+        string SumOfDigits(string n1);
+        [OperationContract]
+        string ReverseString(string n1);
+        [OperationContract]
+        string TagHTML(string n1, string n2);
+        [OperationContract]
+        string OrderNumbers(string n1, string n2, string n3, string n4, string n5, string n6);
 
     }
 

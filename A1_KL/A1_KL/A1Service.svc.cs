@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using System.Web.UI;
 
 namespace A1_KL
 {
@@ -53,6 +54,62 @@ namespace A1_KL
 
             //else is prime
             return isPrime;
+        }
+
+        public string ReverseString(string n1)
+        {
+            char[] charArray = n1.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
+        }
+
+        public string SumOfDigits(string n1)
+        {
+            int value = Int32.Parse(n1);
+            int sum = 0;
+            string result;
+
+            while(value != 0)
+            {
+                sum += value % 10;
+                value /= 10;
+            }
+
+            result = "The sum of " + n1 + " is " + sum;
+            return result;
+
+        }
+
+        public string TagHTML(string n1, string n2)
+        {
+            string result = "<" + n1 + ">" + n2 + "<" + n1 + ">";
+            return result;
+        }
+
+        public string OrderNumbers(string n1, string n2, string n3, string n4, string n5, string n6)
+        {
+            int no1 = Int32.Parse(n1);
+            int no2 = Int32.Parse(n2);
+            int no3 = Int32.Parse(n3);
+            int no4 = Int32.Parse(n4);
+            int no5 = Int32.Parse(n5);
+            int[] intArray = new int[5] { no1, no2, no3, no4, no5 };
+            string result = "";
+
+            if (n6 == "1")
+            {
+                Array.Sort(intArray);              
+                result = string.Join(", ", intArray);
+            }
+            if (n6 == "2")
+            {
+                Array.Sort(intArray);
+                Array.Reverse(intArray);
+                result = string.Join(", ", intArray);
+            }
+            return result;
+            
+
         }
     }
 }

@@ -14,7 +14,7 @@ namespace A1
             A1Reference.A1ServiceClient client = new A1Reference.A1ServiceClient();
 
             bool active = true;
-            string n1, n2, n3, n4, n5, result;
+            string n1, n2, n3, n4, n5, n6, result;
             int value;
             while (active)
             {
@@ -41,6 +41,8 @@ namespace A1
                             value = Int32.Parse(n1);
                             result = client.PrimeNumber(value);
                             Console.WriteLine(result);
+                            Console.ReadLine();
+                            break;
                         }
                         else
                         {
@@ -51,16 +53,15 @@ namespace A1
 
                     case 2:
                         //Sum of digits
-                        Console.WriteLine("Enter Number 1: ");
+                        Console.WriteLine("Enter Numbers: ");
                         n1 =(Console.ReadLine());
                         if (client.IsInt(n1))
                         {
-                            Console.WriteLine("Enter Number 2: ");
-                            n2 = (Console.ReadLine());
-                            if (client.IsInt(n2))
-                            {
-                                //add
-                            }
+                            // sums
+                            result = client.SumOfDigits(n1);
+                            Console.WriteLine(result);
+                            Console.ReadLine();
+                            break;
                         }
                         Console.WriteLine("Invalid Input");
                         Console.ReadLine();
@@ -72,6 +73,9 @@ namespace A1
                         Console.WriteLine("Enter a string: ");
                         n1 = (Console.ReadLine());
                         //reverse string
+                        result = client.ReverseString(n1);
+                        Console.WriteLine(result);
+                        Console.ReadLine();
                         break;
 
 
@@ -82,6 +86,9 @@ namespace A1
                         Console.WriteLine("Enter Data: ");
                         n2 = (Console.ReadLine());
                         //output <tag><data></tag>
+                        result = client.TagHTML(n1, n2);
+                        Console.WriteLine(result);
+                        Console.ReadLine();
                         break;
 
 
@@ -107,7 +114,15 @@ namespace A1
                                         n5 = (Console.ReadLine());
                                         if (client.IsInt(n5))
                                         {
-                                            //sort here
+                                            Console.WriteLine("Enter 1 for Ascending or 2 for Descending: ");
+                                            n6 = (Console.ReadLine());
+                                            if (client.IsInt(n6))
+                                            {
+                                                result = client.OrderNumbers(n1, n2, n3, n4, n5, n6);
+                                                Console.WriteLine(result);
+                                                Console.ReadLine();
+                                                break;
+                                            }
                                         }
                                     }
                                 }

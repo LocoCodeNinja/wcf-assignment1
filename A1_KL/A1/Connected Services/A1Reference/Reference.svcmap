@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="db9dc13c-0c6d-4c3a-9daf-4dee95f51391" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="1db9828a-fa29-46d5-bc9c-d6698da82d0c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,10 +22,10 @@
     <MetadataSource Address="http://localhost:49563/A1Service.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="A1Service.xsd" MetadataType="Schema" ID="362d3e06-e89c-4ad6-9d86-328b38d4298b" SourceId="1" SourceUrl="http://localhost:49563/A1Service.svc?xsd=xsd0" />
-    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="07af4db7-5da4-4f2a-a114-d9a1260fd127" SourceId="1" SourceUrl="http://localhost:49563/A1Service.svc?wsdl" />
-    <MetadataFile FileName="A1Service.disco" MetadataType="Disco" ID="c0208431-e548-4551-a703-99e1699c6ff7" SourceId="1" SourceUrl="http://localhost:49563/A1Service.svc?disco" />
-    <MetadataFile FileName="A1Service1.xsd" MetadataType="Schema" ID="6a5a4688-9454-47b2-8b17-a534f3c5163a" SourceId="1" SourceUrl="http://localhost:49563/A1Service.svc?xsd=xsd1" />
+    <MetadataFile FileName="A1Service.xsd" MetadataType="Schema" ID="ed9568e1-0666-49d8-80b2-8b5745b3d6b6" SourceId="1" SourceUrl="http://localhost:49563/A1Service.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="3ab8cbd3-dd94-482d-9e59-e2e5ac226f97" SourceId="1" SourceUrl="http://localhost:49563/A1Service.svc?wsdl" />
+    <MetadataFile FileName="A1Service.disco" MetadataType="Disco" ID="04b51c39-2a20-44d2-abfe-66801a97f91d" SourceId="1" SourceUrl="http://localhost:49563/A1Service.svc?disco" />
+    <MetadataFile FileName="A1Service1.xsd" MetadataType="Schema" ID="175f3a2f-7da8-444a-b212-e9a5c3fe777d" SourceId="1" SourceUrl="http://localhost:49563/A1Service.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

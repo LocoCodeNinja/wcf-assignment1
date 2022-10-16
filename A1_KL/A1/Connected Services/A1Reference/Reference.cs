@@ -16,16 +16,40 @@ namespace A1.A1Reference {
     public interface IA1Service {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IA1Service/IsInt", ReplyAction="http://tempuri.org/IA1Service/IsIntResponse")]
-        bool IsInt(string userInput);
+        bool IsInt(string n1);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IA1Service/IsInt", ReplyAction="http://tempuri.org/IA1Service/IsIntResponse")]
-        System.Threading.Tasks.Task<bool> IsIntAsync(string userInput);
+        System.Threading.Tasks.Task<bool> IsIntAsync(string n1);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IA1Service/PrimeNumber", ReplyAction="http://tempuri.org/IA1Service/PrimeNumberResponse")]
-        string PrimeNumber(int userInput);
+        string PrimeNumber(int n1);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IA1Service/PrimeNumber", ReplyAction="http://tempuri.org/IA1Service/PrimeNumberResponse")]
-        System.Threading.Tasks.Task<string> PrimeNumberAsync(int userInput);
+        System.Threading.Tasks.Task<string> PrimeNumberAsync(int n1);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IA1Service/SumOfDigits", ReplyAction="http://tempuri.org/IA1Service/SumOfDigitsResponse")]
+        string SumOfDigits(string n1);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IA1Service/SumOfDigits", ReplyAction="http://tempuri.org/IA1Service/SumOfDigitsResponse")]
+        System.Threading.Tasks.Task<string> SumOfDigitsAsync(string n1);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IA1Service/ReverseString", ReplyAction="http://tempuri.org/IA1Service/ReverseStringResponse")]
+        string ReverseString(string n1);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IA1Service/ReverseString", ReplyAction="http://tempuri.org/IA1Service/ReverseStringResponse")]
+        System.Threading.Tasks.Task<string> ReverseStringAsync(string n1);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IA1Service/TagHTML", ReplyAction="http://tempuri.org/IA1Service/TagHTMLResponse")]
+        string TagHTML(string n1, string n2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IA1Service/TagHTML", ReplyAction="http://tempuri.org/IA1Service/TagHTMLResponse")]
+        System.Threading.Tasks.Task<string> TagHTMLAsync(string n1, string n2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IA1Service/OrderNumbers", ReplyAction="http://tempuri.org/IA1Service/OrderNumbersResponse")]
+        string OrderNumbers(string n1, string n2, string n3, string n4, string n5, string n6);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IA1Service/OrderNumbers", ReplyAction="http://tempuri.org/IA1Service/OrderNumbersResponse")]
+        System.Threading.Tasks.Task<string> OrderNumbersAsync(string n1, string n2, string n3, string n4, string n5, string n6);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -55,20 +79,52 @@ namespace A1.A1Reference {
                 base(binding, remoteAddress) {
         }
         
-        public bool IsInt(string userInput) {
-            return base.Channel.IsInt(userInput);
+        public bool IsInt(string n1) {
+            return base.Channel.IsInt(n1);
         }
         
-        public System.Threading.Tasks.Task<bool> IsIntAsync(string userInput) {
-            return base.Channel.IsIntAsync(userInput);
+        public System.Threading.Tasks.Task<bool> IsIntAsync(string n1) {
+            return base.Channel.IsIntAsync(n1);
         }
         
-        public string PrimeNumber(int userInput) {
-            return base.Channel.PrimeNumber(userInput);
+        public string PrimeNumber(int n1) {
+            return base.Channel.PrimeNumber(n1);
         }
         
-        public System.Threading.Tasks.Task<string> PrimeNumberAsync(int userInput) {
-            return base.Channel.PrimeNumberAsync(userInput);
+        public System.Threading.Tasks.Task<string> PrimeNumberAsync(int n1) {
+            return base.Channel.PrimeNumberAsync(n1);
+        }
+        
+        public string SumOfDigits(string n1) {
+            return base.Channel.SumOfDigits(n1);
+        }
+        
+        public System.Threading.Tasks.Task<string> SumOfDigitsAsync(string n1) {
+            return base.Channel.SumOfDigitsAsync(n1);
+        }
+        
+        public string ReverseString(string n1) {
+            return base.Channel.ReverseString(n1);
+        }
+        
+        public System.Threading.Tasks.Task<string> ReverseStringAsync(string n1) {
+            return base.Channel.ReverseStringAsync(n1);
+        }
+        
+        public string TagHTML(string n1, string n2) {
+            return base.Channel.TagHTML(n1, n2);
+        }
+        
+        public System.Threading.Tasks.Task<string> TagHTMLAsync(string n1, string n2) {
+            return base.Channel.TagHTMLAsync(n1, n2);
+        }
+        
+        public string OrderNumbers(string n1, string n2, string n3, string n4, string n5, string n6) {
+            return base.Channel.OrderNumbers(n1, n2, n3, n4, n5, n6);
+        }
+        
+        public System.Threading.Tasks.Task<string> OrderNumbersAsync(string n1, string n2, string n3, string n4, string n5, string n6) {
+            return base.Channel.OrderNumbersAsync(n1, n2, n3, n4, n5, n6);
         }
     }
 }

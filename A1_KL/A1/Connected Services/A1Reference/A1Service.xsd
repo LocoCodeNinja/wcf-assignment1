@@ -3,7 +3,7 @@
   <xs:element name="IsInt">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="userInput" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="n1" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -17,7 +17,7 @@
   <xs:element name="PrimeNumber">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="userInput" type="xs:int" />
+        <xs:element minOccurs="0" name="n1" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -25,6 +25,68 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="PrimeNumberResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SumOfDigits">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="n1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SumOfDigitsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SumOfDigitsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReverseString">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="n1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReverseStringResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ReverseStringResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TagHTML">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="n1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="n2" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TagHTMLResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TagHTMLResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderNumbers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="n1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="n2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="n3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="n4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="n5" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="n6" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderNumbersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OrderNumbersResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

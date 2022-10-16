@@ -18,6 +18,30 @@
   <wsdl:message name="IA1Service_PrimeNumber_OutputMessage">
     <wsdl:part name="parameters" element="tns:PrimeNumberResponse" />
   </wsdl:message>
+  <wsdl:message name="IA1Service_SumOfDigits_InputMessage">
+    <wsdl:part name="parameters" element="tns:SumOfDigits" />
+  </wsdl:message>
+  <wsdl:message name="IA1Service_SumOfDigits_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SumOfDigitsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IA1Service_ReverseString_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReverseString" />
+  </wsdl:message>
+  <wsdl:message name="IA1Service_ReverseString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReverseStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="IA1Service_TagHTML_InputMessage">
+    <wsdl:part name="parameters" element="tns:TagHTML" />
+  </wsdl:message>
+  <wsdl:message name="IA1Service_TagHTML_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TagHTMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IA1Service_OrderNumbers_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderNumbers" />
+  </wsdl:message>
+  <wsdl:message name="IA1Service_OrderNumbers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderNumbersResponse" />
+  </wsdl:message>
   <wsdl:portType name="IA1Service">
     <wsdl:operation name="IsInt">
       <wsdl:input wsaw:Action="http://tempuri.org/IA1Service/IsInt" message="tns:IA1Service_IsInt_InputMessage" />
@@ -26,6 +50,22 @@
     <wsdl:operation name="PrimeNumber">
       <wsdl:input wsaw:Action="http://tempuri.org/IA1Service/PrimeNumber" message="tns:IA1Service_PrimeNumber_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IA1Service/PrimeNumberResponse" message="tns:IA1Service_PrimeNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SumOfDigits">
+      <wsdl:input wsaw:Action="http://tempuri.org/IA1Service/SumOfDigits" message="tns:IA1Service_SumOfDigits_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IA1Service/SumOfDigitsResponse" message="tns:IA1Service_SumOfDigits_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReverseString">
+      <wsdl:input wsaw:Action="http://tempuri.org/IA1Service/ReverseString" message="tns:IA1Service_ReverseString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IA1Service/ReverseStringResponse" message="tns:IA1Service_ReverseString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TagHTML">
+      <wsdl:input wsaw:Action="http://tempuri.org/IA1Service/TagHTML" message="tns:IA1Service_TagHTML_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IA1Service/TagHTMLResponse" message="tns:IA1Service_TagHTML_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderNumbers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IA1Service/OrderNumbers" message="tns:IA1Service_OrderNumbers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IA1Service/OrderNumbersResponse" message="tns:IA1Service_OrderNumbers_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IA1Service" type="tns:IA1Service">
@@ -41,6 +81,42 @@
     </wsdl:operation>
     <wsdl:operation name="PrimeNumber">
       <soap:operation soapAction="http://tempuri.org/IA1Service/PrimeNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SumOfDigits">
+      <soap:operation soapAction="http://tempuri.org/IA1Service/SumOfDigits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReverseString">
+      <soap:operation soapAction="http://tempuri.org/IA1Service/ReverseString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TagHTML">
+      <soap:operation soapAction="http://tempuri.org/IA1Service/TagHTML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderNumbers">
+      <soap:operation soapAction="http://tempuri.org/IA1Service/OrderNumbers" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
