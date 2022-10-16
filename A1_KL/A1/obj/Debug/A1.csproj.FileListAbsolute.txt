@@ -1,0 +1,8 @@
+C:\Users\Kitsa\OneDrive\Desktop\CPA F22\Distributed Apps\wcf-assignment1\wcf-assignment1\A1_KL\A1\bin\Debug\A1.exe.config
+C:\Users\Kitsa\OneDrive\Desktop\CPA F22\Distributed Apps\wcf-assignment1\wcf-assignment1\A1_KL\A1\bin\Debug\A1.exe
+C:\Users\Kitsa\OneDrive\Desktop\CPA F22\Distributed Apps\wcf-assignment1\wcf-assignment1\A1_KL\A1\bin\Debug\A1.pdb
+C:\Users\Kitsa\OneDrive\Desktop\CPA F22\Distributed Apps\wcf-assignment1\wcf-assignment1\A1_KL\A1\obj\Debug\A1.csproj.AssemblyReference.cache
+C:\Users\Kitsa\OneDrive\Desktop\CPA F22\Distributed Apps\wcf-assignment1\wcf-assignment1\A1_KL\A1\obj\Debug\A1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Kitsa\OneDrive\Desktop\CPA F22\Distributed Apps\wcf-assignment1\wcf-assignment1\A1_KL\A1\obj\Debug\A1.csproj.CoreCompileInputs.cache
+C:\Users\Kitsa\OneDrive\Desktop\CPA F22\Distributed Apps\wcf-assignment1\wcf-assignment1\A1_KL\A1\obj\Debug\A1.exe
+C:\Users\Kitsa\OneDrive\Desktop\CPA F22\Distributed Apps\wcf-assignment1\wcf-assignment1\A1_KL\A1\obj\Debug\A1.pdb
