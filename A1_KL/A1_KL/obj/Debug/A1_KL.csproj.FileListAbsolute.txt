@@ -1,0 +1,7 @@
+C:\Users\Kitsa\OneDrive\Desktop\CPA F22\Distributed Apps\wcf-assignment1\wcf-assignment1\A1_KL\A1_KL\bin\A1_KL.dll.config
+C:\Users\Kitsa\OneDrive\Desktop\CPA F22\Distributed Apps\wcf-assignment1\wcf-assignment1\A1_KL\A1_KL\bin\A1_KL.dll
+C:\Users\Kitsa\OneDrive\Desktop\CPA F22\Distributed Apps\wcf-assignment1\wcf-assignment1\A1_KL\A1_KL\bin\A1_KL.pdb
+C:\Users\Kitsa\OneDrive\Desktop\CPA F22\Distributed Apps\wcf-assignment1\wcf-assignment1\A1_KL\A1_KL\obj\Debug\A1_KL.csproj.AssemblyReference.cache
+C:\Users\Kitsa\OneDrive\Desktop\CPA F22\Distributed Apps\wcf-assignment1\wcf-assignment1\A1_KL\A1_KL\obj\Debug\A1_KL.csproj.CoreCompileInputs.cache
+C:\Users\Kitsa\OneDrive\Desktop\CPA F22\Distributed Apps\wcf-assignment1\wcf-assignment1\A1_KL\A1_KL\obj\Debug\A1_KL.dll
+C:\Users\Kitsa\OneDrive\Desktop\CPA F22\Distributed Apps\wcf-assignment1\wcf-assignment1\A1_KL\A1_KL\obj\Debug\A1_KL.pdb
